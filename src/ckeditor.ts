@@ -9,7 +9,7 @@ import { ClassicEditor as ClassicEditorBase } from "@ckeditor/ckeditor5-editor-c
 import { Essentials } from "@ckeditor/ckeditor5-essentials";
 import { UploadAdapter } from "@ckeditor/ckeditor5-adapter-ckfinder";
 import { Autoformat } from "@ckeditor/ckeditor5-autoformat";
-import { Bold, Italic } from "@ckeditor/ckeditor5-basic-styles";
+import { Bold, Italic, Strikethrough } from "@ckeditor/ckeditor5-basic-styles";
 import { BlockQuote } from "@ckeditor/ckeditor5-block-quote";
 import { CKBox } from "@ckeditor/ckeditor5-ckbox";
 import { CKFinder } from "@ckeditor/ckeditor5-ckfinder";
@@ -61,6 +61,7 @@ export default class ClassicEditor extends ClassicEditorBase {
     Table,
     TableToolbar,
     TextTransformation,
+    Strikethrough,
   ];
 
   public static override defaultConfig = {
